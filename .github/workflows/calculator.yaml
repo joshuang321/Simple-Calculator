@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v4
       with:
         repository: pslogan/Simple-Calculator 
-        token: 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
+        token: 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
         path: tests
     - name: Set up Python
       uses: actions/setup-python@v4
