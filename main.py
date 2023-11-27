@@ -1,5 +1,5 @@
 import math
-
+a =1
 TRIG_FUNCS = [math.sin, math.cos, math.tan, math.asin, math.acos, math.atan]
 
 result = float(input("Select a number: "))
