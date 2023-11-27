@@ -6,8 +6,8 @@ jobs:
   build:
     runs-on: Ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         repository: pslogan/Simple-Calculator 
         token: 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
