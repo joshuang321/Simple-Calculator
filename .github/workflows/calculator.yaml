@@ -52,6 +52,7 @@ jobs:
     - name: Upload Archive
       if: success()
       uses: softprops/action-gh-release
+      with: 
         files: |
           release.zip
         name: pootispenserhere
