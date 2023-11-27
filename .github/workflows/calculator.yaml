@@ -30,8 +30,8 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v3
       with:
-        name: pytest-results-${{ python-version }}
-        path: junit/test-results-${{python-version }}.xml
+        name: pytest-results
+        path: junit/test-results.xml
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       if: success()
