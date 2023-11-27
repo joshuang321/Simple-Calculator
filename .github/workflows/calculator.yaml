@@ -27,17 +27,17 @@ jobs:
       if: failure()
       uses: dacbd/create-issue-action@main
     - name: Upload pytest test results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: pytest-results-${{ python-version }}
-          path: junit/test-results-${{python-version }}.xml
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: pytest-results-${{ python-version }}
+        path: junit/test-results-${{python-version }}.xml
     - name: Upload artifacts
-        uses: actions/upload-artifact@v3
-        if: success()
-        with:
-          name: main
-          path: main.py
+      uses: actions/upload-artifact@v3
+      if: success()
+      with:
+        name: main
+        path: main.py
     - name: Download artifacts
       if: success()
       uses: actions/download-artifact@v3
